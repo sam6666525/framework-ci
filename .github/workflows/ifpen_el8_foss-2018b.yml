@@ -131,7 +131,7 @@ jobs:
           path: ${{ env.ARCCORE_SOURCE_DIR }}
           ref: ${{ github.event.inputs.framework_branch }}
       - name: Download arccon install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccon-install-artifact
       - name: Untar arccon install artifact
@@ -197,7 +197,7 @@ jobs:
           path: ${{ env.DEPENDENCIES_SOURCE_DIR }}
           ref: ${{ github.event.inputs.dependencies_branch }}
       - name: Download arccon install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccon-install-artifact
       - name: Untar arccon install artifact
@@ -245,14 +245,14 @@ jobs:
           path: ${{ env.AXLSTAR_SOURCE_DIR }}
           ref: ${{ github.event.inputs.framework_branch }}
       - name: Download arccon install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccon-install-artifact
       - name: Untar arccon install artifact
         shell: bash
         run: tar xf arccon-install-artifact.tar -C /
       - name: Download dependencies install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: dependencies-install-artifact
       - name: Untar dependencies install artifact
@@ -302,28 +302,28 @@ jobs:
           path: ${{ env.ARCANE_SOURCE_DIR }}
           ref: ${{ github.event.inputs.framework_branch }}
       - name: Download arccon install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccon-install-artifact
       - name: Untar arccon install artifact
         shell: bash
         run: tar xf arccon-install-artifact.tar -C /
       - name: Download arccore install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccore-install-artifact
       - name: Untar arccore install artifact
         shell: bash
         run: tar xf arccore-install-artifact.tar -C /
       - name: Download dependencies install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: dependencies-install-artifact
       - name: Untar dependencies install artifact
         shell: bash
         run: tar xf dependencies-install-artifact.tar -C /
       - name: Download axlstar install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: axlstar-install-artifact
       - name: Untar axlstar install artifact
@@ -390,14 +390,14 @@ jobs:
           path: ${{ env.ALIEN_SOURCE_DIR }}
           ref: ${{ github.event.inputs.alien_branch }}
       - name: Download arccon install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccon-install-artifact
       - name: Untar arccon install artifact
         shell: bash
         run: tar xf arccon-install-artifact.tar -C /
       - name: Download arccore install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccore-install-artifact
       - name: Untar arccore install artifact
@@ -468,35 +468,35 @@ jobs:
           ref: ${{ github.event.inputs.alien_legacy_plugins_branch }}
           submodules: true
       - name: Download arcane install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arcane-install-artifact
       - name: Untar arcane install artifact
         shell: bash
         run: tar xf arcane-install-artifact.tar -C /
       - name: Download arccon install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccon-install-artifact
       - name: Untar arccon install artifact
         shell: bash
         run: tar xf arccon-install-artifact.tar -C /
       - name: Download arccore install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccore-install-artifact
       - name: Untar arccore install artifact
         shell: bash
         run: tar xf arccore-install-artifact.tar -C /
       - name: Download alien install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: alien-install-artifact
       - name: Untar alien install artifact
         shell: bash
         run: tar xf alien-install-artifact.tar -C /
       - name: Download axlstar install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: axlstar-install-artifact
       - name: Untar axlstar install artifact
@@ -547,7 +547,7 @@ jobs:
         run: id && ls -lnd /__w && ls -lnR /__w
         continue-on-error: true
       - name: Download arccore build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccore-build-artifact
       - name: Untar arccore build artifact
@@ -589,21 +589,21 @@ jobs:
           path: ${{ env.ARCANE_SOURCE_DIR }}
           ref: ${{ github.event.inputs.framework_branch }}
       - name: Download arcane build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arcane-build-artifact
       - name: Untar arcane build artifact
         shell: bash
         run: tar xf arcane-build-artifact.tar -C /
       - name: Download arccore install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccore-install-artifact
       - name: Untar arccore install artifact
         shell: bash
         run: tar xf arccore-install-artifact.tar -C /
       - name: Download axlstar install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: axlstar-install-artifact
       - name: Untar axlstar install artifact
@@ -641,14 +641,14 @@ jobs:
         with:
           path: ${{ env.ALIEN_SOURCE_DIR }}
       - name: Download alien build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: alien-build-artifact
       - name: Untar alien build artifact
         shell: bash
         run: tar xf alien-build-artifact.tar -C /
       - name: Download arccore install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccore-install-artifact
       - name: Untar arccore install artifact
@@ -691,28 +691,28 @@ jobs:
           ref: ${{ github.event.inputs.alien_legacy_plugins_branch }}
           submodules: true
       - name: Download alienlegacy build artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: alienlegacy-build-artifact
       - name: Untar alienlegacy build artifact
         shell: bash
         run: tar xf alienlegacy-build-artifact.tar -C /
       - name: Download alien install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: alien-install-artifact
       - name: Untar alien install artifact
         shell: bash
         run: tar xf alien-install-artifact.tar -C /
       - name: Download arcane install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arcane-install-artifact
       - name: Untar arcane install artifact
         shell: bash
         run: tar xf arcane-install-artifact.tar -C /
       - name: Download arccore install artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: arccore-install-artifact
       - name: Untar arccore install artifact
